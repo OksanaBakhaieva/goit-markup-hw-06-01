@@ -66,7 +66,7 @@ textarea {
 
 /*Phone screen*/
 .container {
-  max-width: 288px;
+  max-width: 320px;
   margin: 0 auto;
   padding-left: 16px;
   padding-right: 16px;
@@ -238,15 +238,67 @@ textarea {
 } */
 
 /*Features Section*/
-/* .features-section {
-  padding: 120px 0;
+/*Phone screen*/
+.features-section {
+  padding: 96px 0;
   background-color: var(--white);
   text-align: left;
 }
 
+/* Tablet screen*/
+@media screen and (min-width: 768px) {
+  .features-section {
+    padding: 96px 0;
+  }
+}
+
+/* Laptop screen */
+@media screen and (min-width: 1158px) {
+  .features-section {
+    padding: 120px 0;
+  }
+}
+
+/* Mobile */
 .features-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 72px;
+}
+.features-item {
+  flex-basis: 100%;
+}
+.features-item-icon {
+  display: none;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .features-list {
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .features-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  .features-item-icon {
+    display: none;
+  }
+}
+/*Desktop */
+@media screen and (min-width: 1158px) {
+  .features-list {
+    gap: 24px;
+  }
+  .features-item {
+    display: block;
+    flex-basis: calc((100% - 72px) / 4);
+  }
+  .features-item-icon {
+    display: block;
+  }
 }
 
 .visually-hidden {
@@ -260,10 +312,6 @@ textarea {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.features-item {
-  flex-basis: calc((100% - 72px) / 4);
 }
 
 .features-item-icon {
@@ -291,7 +339,7 @@ textarea {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: left;
-} */
+}
 
 /*Team Section*/
 /*Phone screen*/
@@ -344,6 +392,10 @@ textarea {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   margin: 0 auto;
   padding: 0;
+  flex-basis: 100%;
+}
+.team-card-photo {
+  margin: 0 auto;
 }
 
 /* Tablet */
@@ -360,6 +412,9 @@ textarea {
     flex-basis: calc((100% - 24px) / 2);
     padding: 0;
   }
+  .team-card-photo {
+    margin: 0 auto;
+  }
 }
 
 /*Desktop */
@@ -373,6 +428,10 @@ textarea {
   .team-card {
     text-align: center;
     flex-basis: calc((100% - 72px) / 4);
+    padding: 0;
+  }
+  .team-card-photo {
+    margin: 0 auto;
   }
 }
 
