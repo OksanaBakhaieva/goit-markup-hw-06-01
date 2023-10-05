@@ -379,7 +379,7 @@ textarea {
   flex-wrap: wrap;
   gap: 72px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .team-card {
@@ -392,10 +392,11 @@ textarea {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   margin: 0 auto;
   padding: 0;
-  flex-basis: 100%;
+  flex-basis: 264px;
 }
 .team-card-photo {
-  margin: 0 auto;
+  margin: 0 0;
+  padding: 0;
 }
 
 /* Tablet */
@@ -409,11 +410,10 @@ textarea {
   }
   .team-card {
     text-align: center;
-    flex-basis: calc((100% - 24px) / 2);
+    /* flex-basis: calc((100% - 24px) / 2); */
     padding: 0;
-  }
-  .team-card-photo {
     margin: 0 auto;
+    width: 264px;
   }
 }
 
