@@ -450,12 +450,13 @@ textarea {
 
 .features-item-title {
   color: var(--navy-blue);
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
   letter-spacing: 0.02em;
-  text-align: left;
+  text-transform: capitalize;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .features-item-text {
@@ -475,8 +476,16 @@ textarea {
   .features-item {
     flex-basis: calc((100% - 24px) / 2);
   }
+  .features-item-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: left;
+  }
 }
-/* Laptop screen */
+/* Desctop screen */
 @media screen and (min-width: 1158px) {
   .features-section {
     padding: 120px 0;
@@ -491,6 +500,15 @@ textarea {
     flex-basis: calc((100% - 72px) / 4);
     margin: 0 auto;
     padding: 0;
+  }
+  .features-item-title {
+    color: var(--navy-blue);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: left;
+    margin-bottom: 8px;
   }
   .features-item-icon {
     display: flex;
@@ -950,6 +968,7 @@ textarea {
 
   .footer-inner {
     display: flex;
+    flex-direction: row;
     align-items: baseline;
     gap: 0;
   }
